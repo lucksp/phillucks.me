@@ -1,0 +1,17 @@
+{
+  "name": "lucksp",
+  "version": "1.0.0",
+  "description": "philip lucks web dev site",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "philip lucks",
+  "license": "ISC"
+}

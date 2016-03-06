@@ -1,0 +1,238 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+.nav-list {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	float: left;
+	z-index: 10;
+	width: 20%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	font-size: 2.5rem;
+	color: #fff;
+}
+
+.nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.top{
+	position: relative;
+	background-color: #aaa;
+	height: 100vh;
+	color: #fff;
+}
+.top:before {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: .5;
+	background-image: url('../img/back_6.jpg');
+	height: 100vh;
+	width: 100vw;
+	background-position: 50% 0;
+	background-repeat: none;
+	background-size: cover;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 1% auto;
+	font-size: 8rem;
+	letter-spacing: 2rem;
+}
+
+.descript {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 4rem;
+	letter-spacing: 1.5rem;
+}
+
+.aboutDiv {
+	border-top: 4px solid #2C3E50;
+	background-color: #6C7A89;
+	width: 100vw;
+	color: #fff;
+	height: 100vh;
+	font-size: 2.5rem;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	font-size: 3rem;
+	padding-left: 15%;
+	padding-right: 10%;
+}
+
+.portfolioDiv {
+	border-top: 4px solid #2C3E50;
+	background-color: #31373E;
+	height: 100vh;
+	justify-content: center;
+	position: relative;
+	color: #fff;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	padding-left: 15%;
+	padding-right: 10%;
+}
+
+.portfolioDiv h2 {
+	padding-bottom: 30px;
+	font-size: 3.5rem;
+	text-align: center;
+}
+
+.list-group-item {
+	color: #000;
+	font-size: 1.5rem;
+}
+
+.card-text {
+	text-align: center;
+	font-size: 2.5rem; 
+}
+
+.cardView {
+	text-align: center;
+	background-color: #4740A4;
+	font-weight: bold;
+	border-left: 1px solid #504E71;
+	border-bottom: 1px solid #504E71;
+	border-right: 1px solid #504E71;
+}
+
+.cardView a {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+.contactDiv {
+	position: relative;
+	border-top: 4px solid #2C3E50;
+	background-color: #6C7A89;
+	height: 100vh;
+	justify-content: center;
+	color: #fff;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 2rem;
+	padding-left: 15%;
+	padding-right: 10%;
+}
+
+.contactDiv:before {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: .5;
+	background-image: url('../img/back_1.jpg');
+	height: 100vh;
+	width: 100vw;
+	background-position: 50% 0;
+	background-repeat: none;
+	background-size: cover;
+}
+
+.contactDiv a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.contactDiv a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contactOpt {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.fa {
+	font-size: 6rem;
+}
+
+/*footer {
+	background-color: #2C3E50;
+	opacity: .75;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	float: right;
+	padding: 30px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #fff;
+}*/
+
+.copy {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	background-color: transparent;
+	font-size: 1.25rem;
+	color: #000;
+	width: 100vw;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+	.nav-list {
+		width: 100%;
+		background-color: rgba(255, 255, 255, .75);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0;
+		padding: 10px 0;
+	}
+
+	.menu li {
+		width: auto;
+		display: inline;
+		margin: 0 auto;
+	}
+
+	.nav-item a {
+		color: #31373E;
+	}
+
+	.aboutDiv, .portfolioDiv {
+		height: auto;
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	.contactOpt {
+		padding: 50px;
+	}
+
+	.copy {
+		margin-bottom: 40px;
+	}
+
+}
