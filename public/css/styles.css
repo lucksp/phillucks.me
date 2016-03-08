@@ -123,9 +123,9 @@
 	border-top: 4px solid #2C3E50;
 	background-color: #6C7A89;
 	height: 100vh;
-	justify-content: center;
 	color: #fff;
 	display: flex;
+	justify-content: center;
 	align-content: center;
 	align-items: center;
 	text-align: center;
