@@ -14,6 +14,7 @@
 	flex-direction: column;
 	font-size: 2.5rem;
 	color: #fff;
+	font-weight: bold;
 }
 
 .nav a {
@@ -41,19 +42,26 @@
 	background-size: cover;
 }
 
-.title {
+.topInfo {
 	display: flex;
 	justify-content: center;
 	text-transform: uppercase;
 	text-align: center;
+	flex-wrap: wrap;
+	margin: 3% auto;
+}
+
+.title {
+/*	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	text-align: center;
 	margin: 1% auto;
-	font-size: 8rem;
+*/	font-size: 8rem;
 	letter-spacing: 2rem;
 }
 
 .descript {
-	text-transform: uppercase;
-	text-align: center;
 	font-size: 4rem;
 	letter-spacing: 1.5rem;
 }
@@ -167,26 +175,6 @@
 	font-size: 6rem;
 }
 
-/*footer {
-	background-color: #2C3E50;
-	opacity: .75;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	float: right;
-	padding: 30px;
-}
-
-footer a {
-	color: #fff;
-	text-decoration: none;
-}
-
-footer a:hover {
-	text-decoration: none;
-	color: #fff;
-}*/
-
 .copy {
 	position: absolute;
 	bottom: 0;
@@ -200,16 +188,22 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
+
+	.nav {
+		position: absolute;
+		margin: 0;
+	}
 
 	.nav-list {
 		width: 100%;
-		background-color: rgba(255, 255, 255, .75);
+		background-color: rgba(255, 255, 255, .85);
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin: 0;
 		padding: 10px 0;
+		margin-bottom: 0;
+		bottom: 0;
 	}
 
 	.menu li {
@@ -222,17 +216,25 @@ footer a:hover {
 		color: #31373E;
 	}
 
+	.title {
+		width: auto;
+		margin: auto;
+	}
+
 	.aboutDiv, .portfolioDiv {
 		height: auto;
 		padding-top: 45px;
 		padding-bottom: 45px;
-	}
-	.contactOpt {
-		padding: 50px;
 	}
 
 	.copy {
 		margin-bottom: 40px;
 	}
 
+}
+
+@media all and (max-width: 992px) {
+	.contactOpt {
+		padding: 50px;
+	}
 }
