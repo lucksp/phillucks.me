@@ -2,6 +2,8 @@
 	font-family: 'Lato', sans-serif;
 }
 
+
+/*NAV*/
 .nav-list {
 	position: fixed;
 	bottom: 5vh;
@@ -21,6 +23,8 @@
 	color: #fff;
 	text-decoration: none;
 }
+
+/*TOP*/
 
 .top{
 	position: relative;
@@ -62,12 +66,16 @@
 	letter-spacing: 1.5rem;
 }
 
+
+/*ABOUT*/
+
 .aboutDiv {
 	border-top: 4px solid #2C3E50;
 	background-color: #6C7A89;
 	width: 100vw;
 	color: #fff;
-	height: 100vh;
+	height: auto;
+	min-height: 100vh;
 	font-size: 2.5rem;
 	display: flex;
 	align-content: center;
@@ -77,10 +85,13 @@
 	padding-right: 10%;
 }
 
+/*PORTFOLIO*/
+
 .portfolioDiv {
 	border-top: 4px solid #2C3E50;
 	background-color: #31373E;
-	height: 100vh;
+	height: auto;
+	min-height: 85vh;
 	justify-content: center;
 	position: relative;
 	color: #fff;
@@ -122,6 +133,22 @@
 	text-align: center;
 }
 
+.portMore {
+	width: 100vw;
+	min-height: 15vh;
+	height: auto;
+	text-align: center;
+	background-color: #31373E;
+	color: #fff;
+}
+
+.portMore a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/*CONTACT*/
+
 .contactDiv {
 	position: relative;
 	border-top: 4px solid #2C3E50;
@@ -136,7 +163,7 @@
 	font-size: 2rem;
 	padding-left: 15%;
 	padding-right: 10%;
-};
+}
 
 .contactDiv:before {
 	display: block;
