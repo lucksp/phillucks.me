@@ -87,11 +87,22 @@
 
 /*PORTFOLIO*/
 
+.arrows {
+	position: relative;
+	clear: both;
+	bottom: 0;
+	text-align: center;
+}
+
+.arrowLeft, .arrowRight {
+	margin: 0 5px;
+}
+
 .portfolioDiv {
 	border-top: 4px solid #2C3E50;
 	background-color: #31373E;
 	height: auto;
-	min-height: 85vh;
+	min-height: 100vh;
 	justify-content: center;
 	position: relative;
 	color: #fff;
@@ -131,15 +142,6 @@
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
-}
-
-.portMore {
-	width: 100vw;
-	min-height: 15vh;
-	height: auto;
-	text-align: center;
-	background-color: #31373E;
-	color: #fff;
 }
 
 .portMore a {

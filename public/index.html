@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" ng-app="portfolio">
 	<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta charset="utf-8">
@@ -45,7 +45,7 @@
 		</script>
 		<!-- End of Analytics -->
 	</head>
-	<body>
+	<body ng-controller="galleryPortfolio">
 		<nav class="nav col-xs-3">
 			<ul class="nav-list menu">
 				<li class="nav-item about"><a href='#about'>about</a></li>
@@ -71,58 +71,29 @@
 			<div class="row col-xs-12">
 				<h2>Examples of Work</h2>
 				<div class="card">
-					<div class="col-sm-4">
-						  <div class="card-block">
-						    <p class="card-text">Music Seen</p>
-						  </div>
-						  <ul class="list-group list-group-flush">
-						    <li class="list-group-item"><strong>Concept:</strong> What is data? How it can be represented in useful formats?  Music Seen offers a visual representation of music trends in map views.  Find out current trends in genres and number of plays per country.  Also offers a portal for Band management to login and post tour dates which the public can see who is playing near them.</li>
-						    <li class="list-group-item"><strong>RefactorU Final project:</strong> 9 days from concept to presentation.</li>
-						    <li class="list-group-item"><strong>Developer Tools:</strong> MEAN Stack (MongoDB, express.js, AngularJS, Node.js), RESTful API integration with LastFM, GeoJSON, CSS3, HTML5, Bootstrap, served from Digital Ocean.</li>
-						    <li class="list-group-item cardView"><a href="http://104.236.139.235" target="_blank">Live View</a></li>
-						  </ul>
+					<div class="col-sm-4"  ng-repeat="item in carouselPortfolio"  ng-show="$index <= activePortfolio" ng-hide="$index === hidden">
+						<div class="card-block">
+						    <p class="card-text">{{item.title}}</p>
+						</div>
+						<ul class="list-group list-group-flush">
+						   	<li class="list-group-item"><strong>Concept: </strong>{{item.concept}}</li>
+						  	<li class="list-group-item"><strong>{{item.background}}</strong>{{item.backgroundDet}}</li>
+						  	<li class="list-group-item"><strong>Developer Tools: </strong>{{item.devTools}}</li>
+						  	<li class="list-group-item cardView"><a href="{{item.liveLink}}" target="_blank">Live View</a></li>
+						</ul>
 					</div>
-					<div class="col-sm-4">
-						  <div class="card-block">
-						    <p class="card-text">Apres Ski Hub</p>
-						  </div>
-						  <ul class="list-group list-group-flush">
-						    <li class="list-group-item"><strong>Concept:</strong> Provides the key touchpoints for an outdoor enthusiast looking for a full day's experience - on and off the mountain.  Combines snow and weather report, events & promotions, and traffic conditions; which normally requires at least 3-4 applications.</li>
-						    <li class="list-group-item"><strong>RefactorU MidTerm project:</strong> 4 days from concept to presentation.</li>
-						    <li class="list-group-item"><strong>Developer Tools:</strong> AngularJS, JSON, CSS3, HTML5, Bootstrap.</li>
-						    <li class="list-group-item cardView"><a href="http://1pt21gwprod.com/refactor/apres/index.html" target="_blank">Live View</a></li>
-						  </ul>
-					</div>
-					<div class="col-sm-4">
-						  <div class="card-block">
-						    <p class="card-text">Restaurant</p>
-						  </div>
-						  <ul class="list-group list-group-flush">
-						    <li class="list-group-item"><strong>Concept:</strong> Build a simple restaurant interface which displays menu information based on user dietary preference input.</li>
-						    <li class="list-group-item"><strong>Group Coding Exercise:</strong> 2 days from concept to presentation.</li>
-						    <li class="list-group-item"><strong>Developer Tools:</strong> AngularJS, CSS3, HTML5, Bootstrap.</li>
-						    <li class="list-group-item cardView"><a href="http://1pt21gwprod.com/refactor/restaurant/main.html" target="_blank">Live View</a></li>
-						  </ul>
-					</div>
-					<!-- <div class="col-sm-4">
-						  <div class="card-block">
-						    <p class="card-text">AngularJS Slideshow</p>
-						  </div>
-						  <ul class="list-group list-group-flush">
-						    <li class="list-group-item"><strong>Concept:</strong> Simple photo slideshow using only AngularJS to display and change images on display.</li>
-						    <li class="list-group-item"><strong>RefactorU weekly exercise:</strong> Content example.</li>
-						    <li class="list-group-item"><strong>Developer Tools:</strong> AngularJS, CSS, HTML</li>
-						    <li class="list-group-item cardView"><a href="http://1pt21gwprod.com/refactor/slideshow/js8-slideshow.html" target="_blank">Live View</a></li>
-						  </ul>
-					</div> -->
 				</div>
-
+				<div class="row arrows">
+					<i class="arrowLeft fa fa-chevron-circle-left" ng-click="prevSlide()"></i>
+					<i class="arrowRight fa fa-chevron-circle-right" ng-click="nextSlide()"></i>
+					<div class="portMore">
+						<h4>View more examples on <a href="https://www.github.com/lucksp" target="_blank">Github</a>.</h4>
+					</div>
+				</div>
 			</div>
 		</div>
 			<div class="container-fluid">
-				<div class="row portMore">
-					<h4>View more examples on <a href="https://www.github.com/lucksp" target="_blank">Github</a>.</h4>
-				</div>
+				
 			</div>
 				
 		<a name="contact"></a>
@@ -158,5 +129,7 @@
 		</footer> -->	
 	</body>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/mobile.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+<!--  <script src="js/mobile.js" type="text/javascript"></script> -->
 </html>
