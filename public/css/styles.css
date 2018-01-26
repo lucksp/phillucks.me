@@ -234,7 +234,7 @@ section#contact{
 }
 
 /* MEDIA QUERIES */
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 	.nav {
 		position: absolute;
@@ -271,10 +271,16 @@ section#contact{
 		height: auto;
 		padding-top: 45px;
 		padding-bottom: 45px;
+	    padding-left: 10%;
+    	padding-right: 10%;
 	}
 
 	.copy {
 		margin-bottom: 40px;
+	}
+
+	.aboutTxt {
+		font-size: 18px;
 	}
 
 }
