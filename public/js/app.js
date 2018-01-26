@@ -6,6 +6,22 @@ angular.module('portfolio')
 
 			var galleryPortfolio = [
 				{	
+					title 		: 'LITSCO',
+					concept		: 'Mockups, new logo, and full development of website. Commercial building products distributor and metal fabricator needs to showcase their products and highlight services.',
+					background	: 'November 2016:',
+					backgroundDet	: 'Complete overhaul to give mobile-friendly layout and modern components.',
+					devTools	: 'AngularJS, Node.js, express.js, Gulp, MaterializeCSS',
+					liveLink	: 'http://www.litsco.com'
+				},
+				{	
+					title 		: 'SnapTest',
+					concept		: 'Built a dashboard for a live chat SaaS company',
+					background	: 'Developer interview task: ',
+					backgroundDet	: 'Approx 72 hours to complete, only provided a mock JSON data file',
+					devTools	: 'AngularJS, Node.js, express.js)',
+					liveLink	: 'http://lucksp.github.io/snapTest/'
+				},
+				{	
 					title 		: 'Music Seen',
 					concept		: 'What is data? How it can be represented in useful formats? Music Seen offers a visual representation of music trends in map views. Find out current trends in genres and number of plays per country. Also offers a portal for Band management to login and post tour dates which the public can see who is playing near them.',
 					background	: 'RefactorU Final project: ',
@@ -19,7 +35,7 @@ angular.module('portfolio')
 					background	: 'RefactorU MidTerm project: ',
 					backgroundDet	: '4 days from concept to presentation.',
 					devTools	: 'AngularJS, JSON, CSS3, HTML5, Bootstrap.',
-					liveLink	: 'http://1pt21gwprod.com/refactor/apres/index.html'
+					liveLink	: 'http://lucksp.github.io/apres/'
 				},
 				{	
 					title 		: 'Restaurant',
@@ -28,17 +44,8 @@ angular.module('portfolio')
 					backgroundDet	: '2 days from concept to presentation.',
 					devTools	: 'AngularJS, CSS3, HTML5, Bootstrap.',
 					liveLink	: 'http://1pt21gwprod.com/refactor/restaurant/main.html'
-				},
-				{	
-					title 		: 'LITSCO',
-					concept		: 'Complete overhaul, design, and development of website. Commercial building products distributor and metal fabricator needs to showcase their products and highlight services.  ',
-					background	: '2013 to current: ',
-					backgroundDet	: 'Added eCommerce and client portal after initial release of site.',
-					devTools	: 'Adobe MUSE, CSS, ECWID.',
-					liveLink	: 'http://www.litsco.com'
-				},
-
-			]
+				}
+			];
 			return {
 					galleryPortfolio: galleryPortfolio,
 			}
