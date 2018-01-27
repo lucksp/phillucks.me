@@ -59,26 +59,23 @@ a.active {
 
 .topInfo {
 	display: flex;
-	justify-content: center;
-	text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;
 	text-align: center;
-	flex-wrap: wrap;
-	margin: 3% auto;
 	width: 100vw;
-    position: absolute;
-    left: 0;
 }
 
 .title {
-	width: 100%;
 	font-size: 8rem;
-	letter-spacing: 2rem;
 }
 
-.descript {
-	width: 100%;
+.title-description {
+	padding: 24px;
 	font-size: 4rem;
-	letter-spacing: 1.5rem;
+	background: rgba(204, 204, 204, .5);
 }
 
 
@@ -104,6 +101,11 @@ a.active {
 }
 
 /*PORTFOLIO*/
+
+
+.portfolioDiv {
+	padding-top: 40px;
+}
 
 .arrows {
 	position: relative;
@@ -253,7 +255,6 @@ section#contact{
 	}
 
 	.menu li {
-		width: auto;
 		display: inline;
 		margin: 0 auto;
 	}
@@ -291,5 +292,9 @@ section#contact{
 	}
 	.contactDiv {
 		flex-direction: column;
+		padding-left: 10%;
+	}
+	.title-description {
+		font-size: 3rem;
 	}
 }
