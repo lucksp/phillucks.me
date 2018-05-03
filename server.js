@@ -1,21 +1,20 @@
 // Requires \\
-var express = require('express');
-var logger = require('morgan');
+var express = require("express");
+var logger = require("morgan");
 // Create Express App Object \\
 var app = express();
 
 // Application Configuration \\
-app.use(logger('dev'));
-app.use(express.static(__dirname + '/public'));
+app.use(logger("dev"));
+app.use(express.static(__dirname + "/public"));
 
 // Routes \\
-app.get('/', function(req, res){
-  res.sendFile('index.html')
+app.get("/", function(req, res) {
+  res.sendFile("index.html");
 });
 
 // Creating Server and Listening for Connections \\
-var port = 8080;
-app.listen(port, function(){
-  console.log('Server running on port ' + port);
-
-})
+var port = process.env.NODE_ENV === "production" ? 80 : 8080;
+app.listen(port, function() {
+  console.log("Server running on port " + port);
+});
