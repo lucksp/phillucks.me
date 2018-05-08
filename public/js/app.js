@@ -10,7 +10,7 @@ angular.module("portfolio").factory("factoryPortfolio", [
         background: "Winter 2017",
         backgroundDet: "Build from scratch - no outside boilerplates.",
         devTools: "React, Webpack, express.js, Node.js",
-        liveLink: "http://www.xhaustd.com"
+        liveLink: "http://www.xhaustdapp.com"
       },
       {
         title: "LITSCO",
